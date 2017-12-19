@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css\normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat Alternates' rel='stylesheet'>
+<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>b
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="js/script.js"></script>
+<link rel="stylesheet" href="css\about.css">
+<link rel="stylesheet" href="about.html">
+<link rel="stylesheet" href="css\font-awesome.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation"
+      <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">DCA</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+
+
+
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-collapse -->
+  </nav>
+<div class="container-fluid">
+	<div class="row">
+
+<!-- about -->
+
+<div class="body-container profile-structure">
+    <div class="body-content">
+        <div class="profile-wrapper">
+			<div class="profile-header profile-same">
+				<div class="profile-avatar">
+					<img src="img\me1.png"/>
+				</div>
+				<h1>David Avendano</h1>
+				<h2>Front-End Developer</h2>
+			</div>
+			<div class="profile-bio profile-same">
+				<p class="short-description">Hi! My name is David and I'm a Web Developer. I build and design fast...</p>
+				<div id="profile-bio-wrapper">
+					<div id="show-more-icon" class="no-select">
+						<i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+					</div>
+					<div class="social-list">
+						<ul>
+							<li class="bio-item paper-button"><a href="#" title="Stack Overflow PT" target="_blank"><i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i></a></li>
+							<li class="bio-item paper-button"><a href="#" title="CodePen" target="_blank"><i class="fa fa-fw fa-codepen" aria-hidden="true"></i></a></li>
+							<li class="bio-item paper-button"><a href="#" title="GitHub" target="_blank"><i class="fa fa-fw fa-github" aria-hidden="true"></i></a></li>
+							<li class="bio-item paper-button"><a href="javascript:void(0)" itemprop="email" title="" target="_top"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+					<div class="bio-extra">
+						<p>Hi! My name is David and I'm a Web Developer.</p>
+						<p>I build and design fast performance oriented things and concepts
+						that look and feel good on the User Experience in hopes of making life easier
+						and enjoyable for hundreds of people.</p>
+						<p><b>Skilled in:</b> HTML, CSS, Responsive,  jQuery, and more.</p>
+						<p><b>Other skills:</b> Adobe Photoshop, Adobe After Effects, Mechanics, Electronics.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+<div class="bottom-ball-fill"></div>
+
+
+<!--java -->
+<script>
+
+var bioShowMore = document.getElementById('show-more-icon');
+var bioMoreWrap = document.getElementById('profile-bio-wrapper');
+
+if (typeof(bioShowMore) != 'undefined' && bioShowMore != null){
+	bioShowMore.addEventListener('click', function(){
+		bioMoreWrap.classList.toggle('show-more-info');
+	});
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+     <script
+       src="https://code.jquery.com/jquery-3.2.1.min.js "
+       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+       crossorigin=" anonymous "></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+       <script type="text/javascript">
+         $(document).ready(function() {
+    var $lightbox = $('#lightbox');
+
+    $('[data-target="#lightbox"]').on('click', function(event) {
+        var $img = $(this).find('img'),
+            src = $img.attr('src'),
+            alt = $img.attr('alt'),
+            css = {
+                'maxWidth': $(window).width() - 100,
+                'maxHeight': $(window).height() - 100
+            };
+
+        $lightbox.find('.close').addClass('hidden');
+        $lightbox.find('img').attr('src', src);
+        $lightbox.find('img').attr('alt', alt);
+        $lightbox.find('img').css(css);
+    });
+
+    $lightbox.on('shown.bs.modal', function (e) {
+        var $img = $lightbox.find('img');
+
+        $lightbox.find('.modal-dialog').css({'width': $img.width()});
+        $lightbox.find('.close').removeClass('hidden');
+    });
+});
+       </script>
+
+   </body>
+ </html>
