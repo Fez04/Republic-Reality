@@ -4,6 +4,15 @@ body {
 font-size: 16px;
 }
 
+.navbar-brand {
+  padding-bottom: 0px;
+  max-width: auto%
+  max-height: 100%;
+
+
+}
+
+
 .navbar-default {
   background-color: #563333;
   border-color: #563333;
@@ -111,18 +120,19 @@ font-size: 16px;
     #thumbnail-preview-indicators .slides .slide-1,
     #thumbnail-preview-indicators .slides .slide-2,
     #thumbnail-preview-indicators .slides .slide-3 {
-      height: 680px;
-      //*width: 1903px;*//
+        height: 680px;
+      /*width: 1903px;*/
     }
 #thumbnail-preview-indicators .slides .slide-1 {
-  background-image: url(../img/Friends.jpg);
+  background-image: url(../img/house.888.jpg);
+
 }
 #thumbnail-preview-indicators .slides .slide-2 {
-  background-image: url(../img/Kitchen.jpg);
+  background-image: url(../img/house8.jpg);
 }
 #thumbnail-preview-indicators .slides .slide-3 {
-  background-image: url(../img/Couple2.jpg);
-  background-size: contain;
+  background-image: url(../img/house666.jpeg);
+  background-size: cover;
 }
 #thumbnail-preview-indicators .carousel-inner .item .carousel-caption {
   top: 20%;
@@ -220,17 +230,24 @@ font-size: 16px;
 
 img {
   display: block;
+  width: 250px;
+ max-width: 100%;
+ max-height: 200px;
+
 }
 
+
+
 .gallery {
-  position: relative;
+
+  position: static;
   z-index: 2;
-  padding: 10px;
+  /*padding: 10px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
+ /*flex-flow: row wrap;*/
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
